@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <section id="TheVideo">
+    <iframe id="MyVideo" width="560" height="315" 
+    src="https://www.youtube.com/embed/JHa7aOfgCJw" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
+</section>
+
+<section id="VideoLinks">
+  <ul>
+    <li>Recording Label with Nick Roth (Diatribe Records)</li>
+    <ul>
+      <li onclick="document.getElementById('MyVideo').src = SessionOne" style="cursor: pointer;">
+        Session 1 <code class="language-plaintext highlighter-rouge">&mdash;</code> Curation 
+      </li>
+      <li onclick="document.getElementById('MyVideo').src = SessionTwo" style="cursor: pointer;">
+        Session 2 <code class="language-plaintext highlighter-rouge">&mdash;</code> Design
+      </li>
+    </ul>
+    <li>Self-releasing Music with Matthew Whiteside</li>
+    <ul>
+    <li onclick="document.getElementById('MyVideo').src = SelfRe" style="cursor: pointer;">
+      Self-releasing Music
+    </li>
+  </ul>
+  </ul>
+
+</ul>
+
+</section>
+</body>
+
+<style type="text/css">
+#TheVideo {
+  display: flex;
+  align-self: center;
+  justify-content:center;
+}
+
+iframe {
+  border: 1px solid black;
+}
+
+#VideoLinks {
+  display: flex;
+  align-self: center;
+  justify-content:center;
+}
+
+</style>
+
+<script>
+  let SessionOne = "https://www.youtube.com/embed/zm-VlKbJ5JE"
+  let SessionTwo = "https://www.youtube.com/embed/Pb--8EL1uIQ"
+  let SelfRe = "https://www.youtube.com/embed/p37T2h4Vgyo" 
+
+</script>
+</html>
